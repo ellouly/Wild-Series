@@ -14,7 +14,9 @@ PHP, Doctrine
 Symfony 4, Webpack Encore
 
 Here is the wireframe and the styleguide edited with MokeFlow:
+/home/elodie/Images/Wireframe Wild-series.png
 
+/home/elodie/Images/Styleguide Wild-series.png
 
 ## How to set up the Project¶
 
@@ -24,14 +26,14 @@ https://symfony.com/doc/current/setup.html#setting-up-an-existing-symfony-projec
 
 ## The progress of the learning
 
-1- Wireframe and styleguide (Done)
-2- Symfony initialization (Done)
-3- Home page creation (Done)
-4- Module Webpack Encore installation (Done)
-5- Routing advanced
-6- First Doctrine entity
-7- Many-to-One relation with Doctrine
-8- Recovering stored data with Doctrine
-9- Bidirectional relationships with Doctrine
+1. Wireframe and styleguide (Done)
+2.Symfony initialization (Done)
+3. Home page creation (Done)
+4. Module Webpack Encore installation (Done)
+5. Routing advanced
+6. First Doctrine entity
+7. Many-to-One relation with Doctrine
+8. Recovering stored data with Doctrine
+9. Bidirectional relationships with Doctrine
 
-## ALL ADVICE IS WELCOME !!
+## All advice is welcome !!
