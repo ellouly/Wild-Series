@@ -14,9 +14,7 @@ PHP, Doctrine
 Symfony 4, Webpack Encore
 
 Here is the wireframe and the styleguide edited with MokeFlow:
-/home/elodie/Images/Wireframe Wild-series.png
-
-/home/elodie/Images/Styleguide Wild-series.png
+Wireframe Wild-series.png
 
 ## How to set up the Project¶
 
