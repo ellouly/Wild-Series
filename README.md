@@ -26,7 +26,7 @@ https://symfony.com/doc/current/setup.html#setting-up-an-existing-symfony-projec
 ## The progress of the learning
 
 1. Wireframe and styleguide (Done)
-2.Symfony initialization (Done)
+2. Symfony initialization (Done)
 3. Home page creation (Done)
 4. Module Webpack Encore installation (Done)
 5. Routing advanced
