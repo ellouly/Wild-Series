@@ -14,9 +14,9 @@ HTML5, CSS3, SCSS, Bootstrap,
 PHP, Doctrine,
 Symfony 4, Webpack Encore
 
-Here is the wireframe and the styleguide edited with MokeFlow:
-![Wireframe.png] (https://raw.githubusercontent.com/ellouly/Wild-Series/master/assets/images/Wireframe%20Wild-series.png)
-![Styleguide.png]
+Here is the wireframe edited with MokeFlow:
+
+![Wireframe.png](https://raw.githubusercontent.com/ellouly/Wild-Series/master/assets/images/Wireframe%20Wild-series.png)
 
 ## How to set up the Project¶
 
