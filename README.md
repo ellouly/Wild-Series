@@ -8,9 +8,10 @@ Repository created to learn and improve Symfony 4 during my training in the Wild
 It is the creation of a web application similar to Betaseries 
 
 I use the Scrum method to realise this project.
+
 Skills :
-HTML5, CSS3, SCSS, Bootstrap
-PHP, Doctrine
+HTML5, CSS3, SCSS, Bootstrap,
+PHP, Doctrine,
 Symfony 4, Webpack Encore
 
 Here is the wireframe and the styleguide edited with MokeFlow:
