@@ -15,7 +15,8 @@ PHP, Doctrine,
 Symfony 4, Webpack Encore
 
 Here is the wireframe and the styleguide edited with MokeFlow:
-
+![Wireframe.png]
+![Styleguide.png]
 
 ## How to set up the Project¶
 
