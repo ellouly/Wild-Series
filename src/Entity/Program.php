@@ -31,19 +31,25 @@ class Program
      */
     private $poster;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Category")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $category;
+
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getProgram(): ?string
+    public function getTitle(): ?string
     {
-        return $this->Program;
+        return $this->title;
     }
 
-    public function setProgram(string $Program): self
+    public function setTitle(string $title): self
     {
-        $this->Program = $Program;
+        $this->title = $title;
 
         return $this;
     }
@@ -68,6 +74,18 @@ class Program
     public function setPoster(?string $poster): self
     {
         $this->poster = $poster;
+
+        return $this;
+    }
+
+    public function getCategory(): ?Category
+    {
+        return $this->category;
+    }
+
+    public function setCategory(?Category $category): self
+    {
+        $this->category = $category;
 
         return $this;
     }
