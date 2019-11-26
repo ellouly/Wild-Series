@@ -9,7 +9,7 @@ It is the creation of a web application similar to Betaseries
 
 I use the Scrum method to realise this project.
 
-Skills :
+Skills :  
 HTML5, CSS3, SCSS, Bootstrap,  
 PHP, Doctrine,  
 Symfony 4, Webpack Encore
