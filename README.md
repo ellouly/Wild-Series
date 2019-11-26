@@ -31,8 +31,8 @@ https://symfony.com/doc/current/setup.html#setting-up-an-existing-symfony-projec
 3. Home page creation (Done)
 4. Module Webpack Encore installation (Done)
 5. Routing advanced (Done)
-6. First Doctrine entity
-7. Many-to-One relation with Doctrine
+6. First Doctrine entity (Done)
+7. Many-to-One relation with Doctrine (Done)
 8. Recovering stored data with Doctrine
 9. Bidirectional relationships with Doctrine
 
