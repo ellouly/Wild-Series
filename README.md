@@ -10,8 +10,8 @@ It is the creation of a web application similar to Betaseries
 I use the Scrum method to realise this project.
 
 Skills :
-HTML5, CSS3, SCSS, Bootstrap,
-PHP, Doctrine,
+HTML5, CSS3, SCSS, Bootstrap,  
+PHP, Doctrine,  
 Symfony 4, Webpack Encore
 
 Here is the wireframe edited with MokeFlow:
@@ -20,12 +20,14 @@ Here is the wireframe edited with MokeFlow:
 
 ## How to set up the Project¶
 
-You only need to get the project code and install the dependencies with Composer.
+You only need to get the project code and install the dependencies with Composer.  
 And follow this command:
-https://symfony.com/doc/current/setup.html#setting-up-an-existing-symfony-project
-And then run those two commands:
+https://symfony.com/doc/current/setup.html#setting-up-an-existing-symfony-project  
+Then run those two commands:
+```
 yarn install
-yarn encore dev build
+yarn encore build
+```
 
 ## The progress of the learning
 
