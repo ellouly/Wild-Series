@@ -12,6 +12,8 @@ use Symfony\Component\Routing\Annotation\Route;
 class WildController extends AbstractController
 {
     /**
+     * Getting the list of programs presented in the website
+     *
      * @Route("index", name="index")
      */
     public function index() : Response
@@ -22,6 +24,8 @@ class WildController extends AbstractController
     }
 
     /**
+     * Getting the slug to identify the article (by convention)
+     *
      * @Route("show/{slug<[a-z0-9-]+>}", defaults={"slug" = null}, name="show")
      */
     public function show($slug) : Response
