@@ -23,6 +23,9 @@ Here is the wireframe edited with MokeFlow:
 You only need to get the project code and install the dependencies with Composer.
 And follow this command:
 https://symfony.com/doc/current/setup.html#setting-up-an-existing-symfony-project
+And then run those two commands:
+yarn install
+yarn encore dev build
 
 ## The progress of the learning
 
