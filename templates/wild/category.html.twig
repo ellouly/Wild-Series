@@ -1,11 +1,12 @@
 {% extends 'base.html.twig' %}
-{% block title %}{% endblock %}
+
+{% block title %}Catégories{% endblock %}
 
 {% block body %}
     {% for category in category %}
         <h2>{{ category.name }}</h2>
     {% endfor %}
-    {% for program in programs %}
+    {% for program in program %}
         <h3>{{ program.title}}</h3>
         <p>{{ program.summary}}</p>
         <img src="{{ program.poster }}" alt="">

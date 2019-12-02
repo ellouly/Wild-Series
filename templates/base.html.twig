@@ -4,6 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Bienvenue !!{% endblock %}</title>
+        <!-- After modification of the setOutputPath of the webpack. config. js file, addition of paths to assets -->
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
@@ -20,6 +21,7 @@
 
     {% endblock %}
 
+    <!-- After modification of the setOutputPath of the webpack. config. js file, addition of paths to assets -->
     {% block javascripts %}
         {{ encore_entry_script_tags('app') }}
     {% endblock %}
