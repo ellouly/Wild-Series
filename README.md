@@ -40,6 +40,13 @@ yarn encore build
 7. Many-to-One relation with Doctrine (Done)
 8. Recovering stored data with Doctrine (Done)
 9. Bidirectional relationships with Doctrine (Done)
+10. The param converter
+11. Keep the 'form'
+12. Generate a CRUD
+13. Doctrine relation 'Many-to-Many'
+14. Entity type
+15. Fixtures
+16. 'Services' introduction
 
 ## Video links:
 
