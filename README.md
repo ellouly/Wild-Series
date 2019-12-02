@@ -38,8 +38,8 @@ yarn encore build
 5. Routing advanced (Done)
 6. First Doctrine entity (Done)
 7. Many-to-One relation with Doctrine (Done)
-8. Recovering stored data with Doctrine
-9. Bidirectional relationships with Doctrine
+8. Recovering stored data with Doctrine (Done)
+9. Bidirectional relationships with Doctrine (Done)
 
 ## Video links:
 
