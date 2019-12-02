@@ -41,4 +41,8 @@ yarn encore build
 8. Recovering stored data with Doctrine
 9. Bidirectional relationships with Doctrine
 
+## Video links:
+
+Challenge 9: https://www.loom.com/share/a17b5c5eabe843da8c5213a9b2ed3a0b
+
 ## All advice is welcome !!
