@@ -25,6 +25,7 @@ And follow this command:
 https://symfony.com/doc/current/setup.html#setting-up-an-existing-symfony-project  
 Then run those two commands:
 ```
+composer install  
 yarn install
 yarn encore build
 ```
