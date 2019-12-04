@@ -1,0 +1,12 @@
+{% extends 'admin.base.html.twig' %}
+
+{% block title %}Catégories{% endblock %}
+
+{% block body %}
+
+    {{ form_start(form) }}
+        {{ form_row(form.name) }}
+        <button class="btn">{{ button_label|default('Ajouter') }}</button>
+    {{ form_end(form) }}
+
+{% endblock %}

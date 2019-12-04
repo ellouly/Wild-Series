@@ -5,4 +5,12 @@ $theme-colors: (
         "secondary": #B38B00,
 );
 
+body {
+  background-color: #2137FF;
+}
+
+h1 {
+  color: #FFCE21;
+}
+
 @import "~bootstrap/scss/bootstrap";
