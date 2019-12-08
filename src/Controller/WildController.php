@@ -143,6 +143,7 @@ class WildController extends AbstractController
             'program' => $program,
         ]);
     }
+
     /**
      * Retrieve an episode of a program in a season
      *
