@@ -43,7 +43,7 @@ yarn encore build
 9. Bidirectional relationships with Doctrine (Done)
 10. The param converter (Done)
 11. Keep the 'form' (Done)
-12. Generate a CRUD
+12. Generate a CRUD (Done)
 13. Doctrine relation 'Many-to-Many'
 14. Entity type
 15. Fixtures
@@ -54,5 +54,8 @@ yarn encore build
 Challenge 9: https://www.loom.com/share/a17b5c5eabe843da8c5213a9b2ed3a0b  
 Challenge 10: https://www.loom.com/share/3d084913dbfb4a419c07b6282a771178  
 Challenge 11: https://www.loom.com/share/71316ee8a723490a981d51df26ace9b0  
+Challenge 12: https://www.loom.com/share/4b11aca112ec4305b055df22f82d9b46  
+              https://www.loom.com/share/1e22820ade2d43158c74e87fff3f79cd  
+              https://www.loom.com/share/83ff9c8983664d0e958444362f199269  
 
 ## All advice is welcome !!
