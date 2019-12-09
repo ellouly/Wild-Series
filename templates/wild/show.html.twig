@@ -19,6 +19,15 @@
         </div>
     {% endfor %}
 
+    <strong>Acteur :</strong>
+    <ul>
+        {% for actor in program.actors %}
+            <li>{{ actor.name }} </li>
+        {% else %}
+            <li>Aucun acteur pour cette série</li>
+        {% endfor %}
+    </ul>
+
     <a href="{{ path('wild_index') }}">Retour à l'accueil</a>
 
 {% endblock %}
