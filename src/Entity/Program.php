@@ -40,14 +40,22 @@ class Program
     private $category;
 
     /**
+     * @ORM\OneToMany(targetEntity="App\Entity\Episode", mappedBy="program")
+     */
+    private $episodes;
+
+    /**
      * @ORM\OneToMany(targetEntity="App\Entity\Season", mappedBy="program")
      */
     private $seasons;
+
 
     /**
      * @ORM\ManyToMany(targetEntity="App\Entity\Actor", mappedBy="programs")
      */
     private $actors;
+
+    //FUNCTIONS
 
     public function __construct()
     {
@@ -104,6 +112,18 @@ class Program
     public function setCategory(?Category $category): self
     {
         $this->category = $category;
+
+        return $this;
+    }
+
+    public function getEpisodes(): ?string
+    {
+        return $this->episodes;
+    }
+
+    public function setEpisodes(string $episodes): self
+    {
+        $this->episodes = $episodes;
 
         return $this;
     }
