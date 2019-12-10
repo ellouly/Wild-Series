@@ -109,6 +109,7 @@ class WildController extends AbstractController
             ' ', ucwords(trim(strip_tags($slug)), "-")
         );
 
+
         $program = $this->getDoctrine()
             ->getRepository(Program::class)
             ->findOneBy(['title' => mb_strtolower($slug)]);
@@ -175,11 +176,11 @@ class WildController extends AbstractController
             ->getRepository(Actor::class)
             ->findOneBy(['id' => $id]);
 
-        $program = $actor->getPrograms();
+        $programs = $actor->getPrograms();
 
         return $this->render('wild/actor.html.twig', [
             'actor' => $actor,
-            'program' => $program,
+            'programs' => $programs,
         ]);
     }
 }

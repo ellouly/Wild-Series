@@ -3,8 +3,18 @@
 {% block title %}Acteurs{% endblock %}
 
 {% block body %}
-    <strong>Acteur : {{ actor.name }}</strong>
 
+    <div class="actor">
+        <h3>Acteur : {{ actor.name }}</h3>
 
+        <strong>Séries :</strong>
+        <ul>
 
+            {% for program in programs %}
+                <li><a href="{{ path('program_show',{'id':program.id}) }}">{{ program.title }}</a></li>
+            {% else %}
+                <li>Aucune série pour cet acteur</li>
+            {% endfor %}
+        </ul>
+    </div>
 {% endblock %}
