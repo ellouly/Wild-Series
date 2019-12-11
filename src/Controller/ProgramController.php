@@ -3,6 +3,8 @@
 namespace App\Controller;
 
 use App\Entity\Program;
+use App\Entity\Season;
+use App\Entity\Actor;
 use App\Form\ProgramType;
 use App\Repository\ProgramRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -52,11 +54,17 @@ class ProgramController extends AbstractController
 
     /**
      * @Route("/{id}", name="program_show", methods={"GET"})
+     * @param Program $program
+     * @param Season $season
+     * @param Actor $actor
+     * @return Response
      */
-    public function show(Program $program): Response
+    public function show(Program $program, Season $season, Actor $actor ): Response
     {
         return $this->render('program/show.html.twig', [
             'program' => $program,
+            'season' => $season,
+            'actor' => $actor
         ]);
     }
 

@@ -12,13 +12,6 @@
             <p>Catégorie : {{ program.category.name }}</p>
         </div>
     </div>
-    {% for season in seasons %}
-        <div>
-            <h4><a href="{{ path('wild_season',{'id':season.id}) }}">Saison {{season.id}} de {{program.title }}</a></h4>
-            <p>{{ season.description }}</p>
-        </div>
-    {% endfor %}
-
     <a href="{{ path('wild_index') }}">Retour à l'accueil</a>
 
 {% endblock %}
