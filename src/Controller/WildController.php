@@ -42,7 +42,7 @@ class WildController extends AbstractController
      * Getting a program with a formatted slug for title
      *
      * @param string $slug The slugger
-     * @Route("/show/{slug<^[a-z0-9-]+$>}", defaults={"slug" = null}, name="show")
+     * @Route("show/{slug<^[a-z0-9-]+$>}", defaults={"slug" = null}, name="show")
      * @return Response
      */
     public function show(?string $slug): Response
@@ -79,7 +79,7 @@ class WildController extends AbstractController
     {
         $category = $this->getDoctrine()
             ->getRepository(Category::class)
-            ->findBy(['categoryName' => $categoryName]);
+            ->findOneBy(['name' => $categoryName]);
 
         if (!$category) {
             throw $this
@@ -118,7 +118,7 @@ class WildController extends AbstractController
             ->getRepository(Season::class)
             ->findBy(['program' => $program]);
 
-        return $this->render('wild/show.html.twig', [
+        return $this->render('program/show.html.twig', [
             'program' => $program,
             'seasons' => $seasons,
         ]);
@@ -135,10 +135,9 @@ class WildController extends AbstractController
         $seasons = $this->getDoctrine()
             ->getRepository(Season::class)
             ->findOneBy(['id' => $id]);
-
         $program = $seasons->getProgram();
         $episodes = $seasons->getEpisodes();
-
+        
         return $this->render('wild/season.html.twig', [
             'seasons' => $seasons,
             'episodes' => $episodes,

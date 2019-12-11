@@ -166,6 +166,11 @@ class Program
     {
         return $this->actors;
     }
+    public function setActors(Actor $actors): self
+    {
+        $this->actors = $actors;
+        return $this;
+    }
 
     public function addActor(Actor $actor): self
     {
