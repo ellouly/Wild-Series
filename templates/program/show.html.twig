@@ -32,7 +32,7 @@
         </ul>
     </div>
     <div>
-        {% for season in seasons %}
+        {% for season in season %}
             <div>
                 <h4><a href="{{ path('wild_season',{'id':season.id}) }}">Saison {{season.id}} de {{program.title }}</a></h4>
                 <p>{{ season.description }}</p>

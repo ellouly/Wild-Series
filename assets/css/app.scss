@@ -5,5 +5,9 @@ $theme-colors: (
         "secondary": #B38B00,
 );
 
+body {
+  background-color: #2137FF !important;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Asap|Bungee+Inline|Play&display=swap');
 @import "~bootstrap/scss/bootstrap";
