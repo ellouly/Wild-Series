@@ -54,17 +54,16 @@ class ProgramController extends AbstractController
 
     /**
      * @Route("/{id}", name="program_show", methods={"GET"})
-     * @param Program $program
-     * @param Season $season
-     * @param Actor $actor
      * @return Response
      */
-    public function show(Program $program, Season $season, Actor $actor ): Response
+    public function show(Program $program): Response
     {
+        $season = $program->getSeasons();
+        $actors = $program->getActors();
         return $this->render('program/show.html.twig', [
             'program' => $program,
-            'season' => $season,
-            'actor' => $actor
+            'actors' => $actors,
+            'season' => $season
         ]);
     }
 
