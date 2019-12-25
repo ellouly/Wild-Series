@@ -21,8 +21,8 @@
                 <td>{{ program.summary }}</td>
                 <td><img src="{{program.poster}}" alt="{{ program.title }} poster"></td>
                 <td>
-                    <a href="{{ path('program_show', {'id': program.id}) }}">Accéder</a>
-                    <a href="{{ path('program_edit', {'id': program.id}) }}">Modifier</a>
+                    <a href="{{ path('program_show', {'slug': program.slug}) }}">Accéder</a>
+                    <a href="{{ path('program_edit', {'slug': program.slug}) }}">Modifier</a>
                 </td>
             </tr>
         {% else %}

@@ -41,7 +41,7 @@ class WildController extends AbstractController
     /**
      * Getting a program with a formatted slug for title
      *
-     * @param string $slug The slugger
+     * @param string $slug
      * @Route("show/{slug<^[a-z0-9-]+$>}", defaults={"slug" = null}, name="show")
      * @return Response
      */
