@@ -4,11 +4,11 @@
 
 {% block body %}
 
-    <div>
+    <div class="bg-white">
             <h2>Saison {{seasons.id}} de {{program.title }}</h2>
             <p>{{ seasons.description }}</p>
     </div>
-    <div>
+    <div class="bg-white">
         <h3>Liste des épisodes</h3>
             {% for episode in episodes %}
                 <a href="{{ path('episode_show',{'slug':episode.slug}) }}">Episode {{ episode.number }} : {{ episode.title }}</a><br>

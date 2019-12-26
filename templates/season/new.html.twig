@@ -3,9 +3,11 @@
 {% block title %}Nouvelle saison{% endblock %}
 
 {% block body %}
-    <h1>Créer une nouvelle saison</h1>
+    <div class="bg-white">
+        <h1>Créer une nouvelle saison</h1>
 
-    {{ include('season/_form.html.twig') }}
+        {{ include('season/_form.html.twig') }}
 
-    <a href="{{ path('season_index') }}">Retour à la liste</a>
+        <a href="{{ path('season_index') }}">Retour à la liste</a>
+    </div>
 {% endblock %}

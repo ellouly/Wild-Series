@@ -16,15 +16,17 @@
         <!-- Navbar -->
     </header>
 
-    <body>
-    {% block body %}
+    <body class="bg-primary">
+        <div class="container">
+            {% block body %}
 
-    {% endblock %}
+            {% endblock %}
 
-    <!-- After modification of the setOutputPath of the webpack. config. js file, addition of paths to assets -->
-    {% block javascripts %}
-        {{ encore_entry_script_tags('app') }}
-    {% endblock %}
+            <!-- After modification of the setOutputPath of the webpack. config. js file, addition of paths to assets -->
+            {% block javascripts %}
+                {{ encore_entry_script_tags('app') }}
+            {% endblock %}
+        </div>
     </body>
 
 </html>

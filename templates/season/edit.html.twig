@@ -3,11 +3,13 @@
 {% block title %}Saison {{ season.year }}{% endblock %}
 
 {% block body %}
-    <h1>Modifier Saison {{ season.year }}</h1>
+    <div class="bg-white">
+        <h1>Modifier Saison {{ season.year }}</h1>
 
-    {{ include('season/_form.html.twig', {'button_label': 'Modifier'}) }}
+        {{ include('season/_form.html.twig', {'button_label': 'Modifier'}) }}
 
-    <a href="{{ path('season_index') }}">Retour à la liste</a>
+        <a href="{{ path('season_index') }}">Retour à la liste</a>
 
-    {{ include('season/_delete_form.html.twig') }}
+        {{ include('season/_delete_form.html.twig') }}
+    </div>
 {% endblock %}
