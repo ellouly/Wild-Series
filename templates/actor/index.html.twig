@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste acteurs{% endblock %}
+
+{% block body %}
+    <h1>Liste des acteurs</h1>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Nom de l'acteur</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for actor in actors %}
+            <tr>
+                <td>{{ actor.name }}</td>
+                <td>
+                    <a href="{{ path('actor_show', {'slug': actor.slug}) }}">Accéder</a>
+                    <a href="{{ path('actor_edit', {'slug': actor.slug}) }}">Modifier</a>
+                    <a href="{{ path('actor_delete', {'slug': actor.slug}) }}">Supprimer</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">Aucun acteur trouvé</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('actor_new') }}">Créer un nouveau</a>
+{% endblock %}
