@@ -16,15 +16,15 @@
     <div>
         <strong>Séries :</strong>
         <ul>
-            {% for program in program.actors %}
-                <li><a href="{{ path('wild_actor',{'id':program.id}) }}" >{{ program.title }}</a></li>
+            {% for program in actor.programs %}
+                <li><a href="{{ path('program_show',{'slug':program.slug}) }}">{{ program.title }}</a></li>
             {% endfor %}
         </ul>
     </div>
 
-    <a href="{{ path('actor_index') }}">Retour à la liste</a>
+    <a href="{{ path('actor_index') }}">Retour à la liste</a><br>
 
-    <a href="{{ path('actor_edit', {'slug': actor.slug}) }}">Modifier</a>
+    <a href="{{ path('actor_edit',{'slug': actor.slug}) }}">Modifier</a>
 
     {{ include('actor/_delete_form.html.twig') }}
 {% endblock %}
