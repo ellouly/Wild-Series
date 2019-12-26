@@ -47,7 +47,13 @@ yarn encore build
 13. Doctrine relation 'Many-to-Many' (Done)
 14. Entity type (Done)
 15. Fixtures (Done)
-16. 'Services' introduction
+16. 'Services' introduction (Done)
+17. 'Email sending'
+18. 'User administration'
+19. 'Let's make our roads safe'
+20. 'User registration'
+21. 'Validation'
+22. 'Customized requests'
 
 ## Video links:
 
@@ -60,5 +66,6 @@ Challenge 12: https://www.loom.com/share/4b11aca112ec4305b055df22f82d9b46
 Challenge 13: https://www.loom.com/share/3eb6f8fe9b6a4ec088c88c72ff204937  
 Challenge 14: https://www.loom.com/share/2a736744569443cb8674688f76b4f634  
 Challenge 15: https://www.loom.com/share/7e8b8f8dbf1a43cea6bc89c375813ddf  
+Challenge 16: https://www.loom.com/share/7ade1817eb364611af89c8b06f0bc0de  
 
 ## All advice is welcome !!
