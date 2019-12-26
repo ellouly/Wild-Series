@@ -37,6 +37,19 @@ class Episode
      */
     private $season;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Program", inversedBy="episodes")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $program;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $slug;
+
+    //FUNCTIONS
+
     public function getId(): ?int
     {
         return $this->id;
@@ -87,6 +100,29 @@ class Episode
     {
         $this->season = $season;
 
+        return $this;
+    }
+
+    public function getProgram(): ?Program
+    {
+        return $this->program;
+    }
+
+    public function setProgram(?Program $program): self
+    {
+        $this->program = $program;
+
+        return $this;
+    }
+
+    public function getSlug(): ?string
+    {
+        return $this->slug;
+    }
+
+    public function setSlug(string $slug): self
+    {
+        $this->slug = $slug;
         return $this;
     }
 }

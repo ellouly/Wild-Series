@@ -5,12 +5,13 @@ $theme-colors: (
         "secondary": #B38B00,
 );
 
-body {
-  background-color: #2137FF;
-}
+a {
+  color: #2137FF;
+  text-decoration: none;
+  background-color: transparent; }
+a:hover {
+  color: #0015d4;
+  text-decoration: underline; }
 
-h1 {
-  color: #FFCE21;
-}
-
+@import url('https://fonts.googleapis.com/css?family=Asap|Bungee+Inline|Play&display=swap');
 @import "~bootstrap/scss/bootstrap";

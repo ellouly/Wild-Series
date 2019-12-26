@@ -40,13 +40,32 @@ class Program
     private $category;
 
     /**
+     * @ORM\OneToMany(targetEntity="App\Entity\Episode", mappedBy="program")
+     */
+    private $episodes;
+
+    /**
      * @ORM\OneToMany(targetEntity="App\Entity\Season", mappedBy="program")
      */
     private $seasons;
 
+
+    /**
+     * @ORM\ManyToMany(targetEntity="App\Entity\Actor", mappedBy="programs")
+     */
+    private $actors;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $slug;
+
+    //FUNCTIONS
+
     public function __construct()
     {
         $this->seasons = new ArrayCollection();
+        $this->actors = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -102,6 +121,18 @@ class Program
         return $this;
     }
 
+    public function getEpisodes(): ?string
+    {
+        return $this->episodes;
+    }
+
+    public function setEpisodes(string $episodes): self
+    {
+        $this->episodes = $episodes;
+
+        return $this;
+    }
+
     /**
      * @return Collection|Season[]
      */
@@ -130,6 +161,50 @@ class Program
             }
         }
 
+        return $this;
+    }
+
+    /**
+     * @return Collection|Actor[]
+     */
+    public function getActors(): Collection
+    {
+        return $this->actors;
+    }
+    public function setActors(Actor $actors): self
+    {
+        $this->actors = $actors;
+        return $this;
+    }
+
+    public function addActor(Actor $actor): self
+    {
+        if (!$this->actors->contains($actor)) {
+            $this->actors[] = $actor;
+            $actor->addProgram($this);
+        }
+
+        return $this;
+    }
+
+    public function removeActor(Actor $actor): self
+    {
+        if ($this->actors->contains($actor)) {
+            $this->actors->removeElement($actor);
+            $actor->removeProgram($this);
+        }
+
+        return $this;
+    }
+
+    public function getSlug(): ?string
+    {
+        return $this->slug;
+    }
+
+    public function setSlug(string $slug): self
+    {
+        $this->slug = $slug;
         return $this;
     }
 }
