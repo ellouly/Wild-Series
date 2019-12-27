@@ -3,10 +3,12 @@
 {% block title %}Créer un acteur{% endblock %}
 
 {% block body %}
-    <h1>Créer un nouvel acteur</h1>
+    <div class="bg-white p-3">
+        <h1>Créer un nouvel acteur</h1>
 
-    {{ include('actor/_form.html.twig') }}
+        {{ include('actor/_form.html.twig') }}
 
-    <a href="{{ path('actor_index') }}">Retour à la liste</a>
+        <a class="btn btn-success m-3" href="{{ path('actor_index') }}">Retour à la liste</a>
+    </div>
 {% endblock %}
 

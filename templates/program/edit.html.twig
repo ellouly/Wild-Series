@@ -3,11 +3,13 @@
 {% block title %}{{ program.title }}{% endblock %}
 
 {% block body %}
-    <h1>Modifier {{ program.title }}</h1>
+    <div class="bg-white p-3">
+        <h1>Modifier {{ program.title }}</h1>
 
-    {{ include('program/_form.html.twig', {'button_label': 'Modifier'}) }}
+        {{ include('program/_form.html.twig', {'button_label': 'Modifier'}) }}
 
-    <a href="{{ path('program_index') }}">Retour à la liste</a>
+       <a class="btn btn-success m-3" href="{{ path('program_index') }}">Retour à la liste</a>
 
-    {{ include('program/_delete_form.html.twig') }}
+        {{ include('program/_delete_form.html.twig') }}
+    </div>
 {% endblock %}
