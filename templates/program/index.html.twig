@@ -3,35 +3,36 @@
 {% block title %}Liste des séries{% endblock %}
 
 {% block body %}
-    <h1>Liste des séries</h1>
+    <h1 class="text-success">Liste des séries</h1>
+    <div class="bg-white p-3">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Titre</th>
+                    <th>Sommaire</th>
+                    <th>Affiche</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for program in programs %}
+                <tr>
+                    <td>{{ program.title }}</td>
+                    <td>{{ program.summary }}</td>
+                    <td><img src="{{program.poster}}" alt="{{ program.title }} poster"></td>
+                    <td>
+                        <a class="btn btn-success m-3" href="{{ path('program_show', {'slug': program.slug}) }}">Accéder</a>
+                        <a class="btn btn-success m-3" href="{{ path('program_edit', {'slug': program.slug}) }}">Modifier</a>
+                    </td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td colspan="5">Pas d'article trouvé</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Titre</th>
-                <th>Sommaire</th>
-                <th>Affiche</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for program in programs %}
-            <tr>
-                <td>{{ program.title }}</td>
-                <td>{{ program.summary }}</td>
-                <td><img src="{{program.poster}}" alt="{{ program.title }} poster"></td>
-                <td>
-                    <a href="{{ path('program_show', {'slug': program.slug}) }}">Accéder</a>
-                    <a href="{{ path('program_edit', {'slug': program.slug}) }}">Modifier</a>
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan="5">Pas d'article trouvé</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
-
-    <a href="{{ path('program_new') }}">Créer une nouvelle série</a>
+        <a class="btn btn-light" href="{{ path('program_new') }}">Créer une nouvelle série</a>
+    </div>
 {% endblock %}
