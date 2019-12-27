@@ -3,7 +3,7 @@
 {% block title %}Liste des saisons{% endblock %}
 
 {% block body %}
-    <h1>Liste des saisons</h1>
+    <h1 class="text-success">Liste des saisons</h1>
 
     <table class="table bg-white">
         <thead>
@@ -21,8 +21,8 @@
                 <td>{{ season.year }}</td>
                 <td>{{ season.description }}</td>
                 <td>
-                    <a href="{{ path('season_show', {'id': season.id}) }}">Accéder</a>
-                    <a href="{{ path('season_edit', {'id': season.id}) }}">Modifier</a>
+                    <a class="btn btn-success m-3" href="{{ path('season_show', {'id': season.id}) }}">Accéder</a>
+                    <a class="btn btn-success m-3" href="{{ path('season_edit', {'id': season.id}) }}">Modifier</a>
                 </td>
             </td>
         {% else %}
@@ -33,5 +33,5 @@
         </tbody>
     </table>
 
-    <a href="{{ path('season_new') }}">Créer une nouvelle saison</a>
+    <a class="create btn btn-success m-3" href="{{ path('season_new') }}">Créer une nouvelle saison</a>
 {% endblock %}

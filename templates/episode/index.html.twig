@@ -3,7 +3,7 @@
 {% block title %}Liste des épisodes{% endblock %}
 
 {% block body %}
-    <h1>Liste des épisodes</h1>
+    <h1 class="text-success">Liste des épisodes</h1>
 
     <table class="table bg-white">
         <thead>
@@ -25,8 +25,8 @@
                 <td>{{ episode.number }}</td>
                 <td>{{ episode.synopsis }}</td>
                 <td>
-                    <a href="{{ path('episode_show', {'slug': episode.slug}) }}">Accéder</a>
-                    <a href="{{ path('episode_edit', {'slug': episode.slug}) }}">Modifier</a>
+                    <a class="btn btn-success m-3" href="{{ path('episode_show', {'slug': episode.slug}) }}">Accéder</a>
+                    <a class="btn btn-success m-3" href="{{ path('episode_edit', {'slug': episode.slug}) }}">Modifier</a>
                 </td>
             </tr>
         {% else %}
@@ -37,5 +37,5 @@
         </tbody>
     </table>
 
-    <a class="create" href="{{ path('episode_new') }}">Créer un nouvel épisode</a>
+    <a class="create btn btn-success m-3" href="{{ path('episode_new') }}">Créer un nouvel épisode</a>
 {% endblock %}

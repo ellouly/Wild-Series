@@ -3,7 +3,7 @@
 {% block title %}Liste acteurs{% endblock %}
 
 {% block body %}
-    <h1>Liste des acteurs</h1>
+    <h1 class="text-success">Liste des acteurs</h1>
 
     <table class="table bg-white">
         <thead>
@@ -16,9 +16,9 @@
             <tr>
                 <td>{{ actor.name }}</td>
                 <td>
-                    <a href="{{ path('actor_show', {'slug': actor.slug}) }}">Accéder</a>
-                    <a href="{{ path('actor_edit', {'slug': actor.slug}) }}">Modifier</a>
-                    <a href="{{ path('actor_delete', {'slug': actor.slug}) }}">Supprimer</a>
+                    <a class="btn btn-success" href="{{ path('actor_show', {'slug': actor.slug}) }}">Accéder</a>
+                    <a class="btn btn-success" href="{{ path('actor_edit', {'slug': actor.slug}) }}">Modifier</a>
+                    <a class="btn btn-light" href="{{ path('actor_delete', {'slug': actor.slug}) }}">Supprimer</a>
                 </td>
             </tr>
         {% else %}
@@ -29,5 +29,5 @@
         </tbody>
     </table>
 
-    <a href="{{ path('actor_new') }}">Créer un nouveau</a>
+    <a class="create btn btn-success m-3" href="{{ path('actor_new') }}">Créer un nouveau</a>
 {% endblock %}
