@@ -20,28 +20,28 @@ class UserFixtures extends Fixture
     {
         // Creation of a user type “subscriber”
         for ($i=0; $i < 3; $i++)
-        $subscriber = new User();
-        $subscriber>setEmail('subscriber'.$i.'subscriber@monsite.com');
-        $subscriber>setRoles(['ROLE_SUBSCRIBER']);
-        $subscriber>setPassword($this->passwordEncoder->encodePassword(
-            $subscriber,
-            'subscriberpassword'.$i
-        ));
+            $subscriber = new User();
+            $subscriber->setEmail("subscriber@monsite.com");
+            $subscriber->setRoles(['ROLE_SUBSCRIBER']);
+            $subscriber->setPassword($this->passwordEncoder->encodePassword(
+                $subscriber,
+                'subscriberpassword'
+            ));
 
-        $manager->persist($subscriber);
+            $manager->persist($subscriber);
 
-        // Creation of a user type “admin”
-        $admin = new User();
-        $admin->setEmail('admin@monsite.com');
-        $admin->setRoles(['ROLE_ADMIN']);
-        $admin->setPassword($this->passwordEncoder->encodePassword(
-            $admin,
-            'adminpassword'
-        ));
+            // Creation of a user type “admin”
+            $admin = new User();
+            $admin->setEmail('admin@monsite.com');
+            $admin->setRoles(['ROLE_ADMIN']);
+            $admin->setPassword($this->passwordEncoder->encodePassword(
+                $admin,
+                'adminpassword'
+            ));
 
-        $manager->persist($admin);
+            $manager->persist($admin);
 
-        // Backup of the new users :
-        $manager->flush();
-    }
+            // Backup of the new users :
+            $manager->flush();
+        }
 }
