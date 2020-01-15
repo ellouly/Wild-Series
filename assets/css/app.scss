@@ -9,5 +9,18 @@ h1 {
   font-family: 'Asap', sans-serif;
 }
 
+th {
+  font-family: 'Play';
+  font-size: 16px;
+}
+
+td {
+  font-family: 'Asap';
+}
+
+.btn {
+  font-family: 'Play';
+}
+
 @import url('https://fonts.googleapis.com/css?family=Asap|Bungee+Inline|Play&display=swap');
 @import "~bootstrap/scss/bootstrap";
