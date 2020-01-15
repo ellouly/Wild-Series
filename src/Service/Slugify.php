@@ -14,6 +14,7 @@ class Slugify
         $slug = preg_replace('~-+~', '-', $slug);
         // remove punctuation and spaces
         $slug = preg_replace('\'/[^a-z0-9\s-]+/\'', '', $slug);
+        $slug = preg_replace('/-/', ' ', ucwords(trim(strip_tags($slug)), "-"));
         return $slug;
     }
 }
