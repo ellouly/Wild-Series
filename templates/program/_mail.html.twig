@@ -1,13 +1,8 @@
-{% extends 'base.html.twig' %}
+<div class="bg-primary p-5">
+    <div class="bg-white">
+        <h2>{{ program.title }} vient d'être publiée !</h2>
 
-{% block body %}
-    <h2>{{ program.title }} vient d'être publiée !</h2>
-
-    <p>Pour découvrir cette nouvelle série suit le lien ci-dessous :</p>
-    <a href="http://127.0.0.1:8000/program/">{{ program.title }}</a>
-{% endblock %}
-
-{% block title %}
-
-{% endblock %}
-
+        <p>Pour découvrir cette nouvelle série suit le lien ci-dessous :</p>
+        <a href="{{ absolute_url(path("program_show",{"slug":program.slug}))}}">{{ program.title }}</a>
+    </div>
+</div>
