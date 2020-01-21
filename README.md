@@ -48,7 +48,7 @@ yarn encore build
 14. Entity type (Done)
 15. Fixtures (Done)
 16. 'Services' introduction (Done)
-17. 'Email sending'
+17. 'Email sending' (Done)
 18. 'User administration'
 19. 'Let's make our roads safe'
 20. 'User registration'
