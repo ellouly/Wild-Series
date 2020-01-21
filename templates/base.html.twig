@@ -1,12 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <title>{% block title %}Bienvenue !!{% endblock %}</title>
+        <!-- After modification of the setOutputPath of the webpack. config. js file, addition of paths to assets -->
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
     </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+
+    <header>
+        <!-- Navbar -->
+        {% include 'wild/navbar.html.twig' %}
+        <!-- Navbar -->
+    </header>
+
+    <body class="bg-primary">
+        <div class="container m-4">
+            {% block body %}
+
+            {% endblock %}
+
+            <!-- After modification of the setOutputPath of the webpack. config. js file, addition of paths to assets -->
+            {% block javascripts %}
+                {{ encore_entry_script_tags('app') }}
+            {% endblock %}
+        </div>
     </body>
+
 </html>

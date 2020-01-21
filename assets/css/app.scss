@@ -1,0 +1,26 @@
+$theme-colors: (
+        "success": #FFCE21,
+        "light": #1a2cc6,
+        "primary": #2137FF,
+        "secondary": #B38B00,
+);
+
+h1 {
+  font-family: 'Asap', sans-serif;
+}
+
+th {
+  font-family: 'Play';
+  font-size: 16px;
+}
+
+td {
+  font-family: 'Asap';
+}
+
+.btn {
+  font-family: 'Play';
+}
+
+@import url('https://fonts.googleapis.com/css?family=Asap|Bungee+Inline|Play&display=swap');
+@import "~bootstrap/scss/bootstrap";
