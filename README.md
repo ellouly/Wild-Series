@@ -67,5 +67,6 @@ Challenge 13: https://www.loom.com/share/3eb6f8fe9b6a4ec088c88c72ff204937
 Challenge 14: https://www.loom.com/share/2a736744569443cb8674688f76b4f634  
 Challenge 15: https://www.loom.com/share/7e8b8f8dbf1a43cea6bc89c375813ddf  
 Challenge 16: https://www.loom.com/share/7ade1817eb364611af89c8b06f0bc0de  
+Challenge 17: https://www.loom.com/share/73474c13d03f4f8ba27ff0809ca1521a  
 
 ## All advice is welcome !!
