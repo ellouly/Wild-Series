@@ -27,7 +27,7 @@ Then run those two commands:
 ```
 composer install  
 yarn install
-yarn encore build
+yarn encore dev
 ```
 
 ## The progress of the learning
