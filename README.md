@@ -28,6 +28,12 @@ Then run those two commands:
 composer install  
 yarn install
 yarn encore dev
+
+Copier le .env en .env.local
+bin.console d:d:c
+bin.console d:m:m
+bin.console d:f:l
+
 ```
 
 ## The progress of the learning
