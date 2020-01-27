@@ -21,7 +21,6 @@ final class Version20191126125453 extends AbstractMigration
     {
         // this up() migration is auto-generated, please modify it to your needs
         $this->abortIf($this->connection->getDatabasePlatform()->getName() !== 'mysql', 'Migration can only be executed safely on \'mysql\'.');
-
         $this->addSql('ALTER TABLE program ADD category_id INT NOT NULL');
         $this->addSql('ALTER TABLE program ADD CONSTRAINT FK_92ED778412469DE2 FOREIGN KEY (category_id) REFERENCES category (id)');
         $this->addSql('CREATE INDEX IDX_92ED778412469DE2 ON program (category_id)');
