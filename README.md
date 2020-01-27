@@ -23,6 +23,7 @@ Here is the wireframe edited with MokeFlow:
 You only need to get the project code and install the dependencies with Composer.  
 And follow this command:
 https://symfony.com/doc/current/setup.html#setting-up-an-existing-symfony-project  
+
 Then run those two commands:
 ```
 composer install  
@@ -30,7 +31,7 @@ yarn install
 yarn encore dev
 
 ```
-Copier le .env en .env.local
+Copy the .env in .env.local
 
 ```
 bin.console d:d:c
